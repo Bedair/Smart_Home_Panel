@@ -12,12 +12,5 @@
 
 void lv_user_gui_init(void)
 {
-    /* display demo; you may replace with your LVGL application at here */
-#ifdef BSP_USING_LVGL_VIDEO_DEMO
-    extern void lv_video_gui_init(void);
-    lv_video_gui_init();
-#else
-    extern void lv_demo_music(void);
-    lv_demo_music();
-#endif
+    ui_init();
 }
