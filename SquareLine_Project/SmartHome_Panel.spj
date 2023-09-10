@@ -19,7 +19,7 @@
                   {
                     "nid": 343705870,
                     "strtype": "OBJECT/Name",
-                    "strval": "Date",
+                    "strval": "LightDate",
                     "InheritedType": 10
                   },
                   {
@@ -325,7 +325,7 @@
                   {
                     "nid": -1010683548,
                     "strtype": "OBJECT/Name",
-                    "strval": "Label3",
+                    "strval": "LightTime",
                     "InheritedType": 10
                   },
                   {
@@ -931,7 +931,7 @@
               {
                 "nid": -1501685449,
                 "strtype": "OBJECT/Name",
-                "strval": "Slider1",
+                "strval": "Light1Slider",
                 "InheritedType": 10
               },
               {
@@ -1283,7 +1283,7 @@
               {
                 "nid": -1985895817,
                 "strtype": "OBJECT/Name",
-                "strval": "Label5",
+                "strval": "Light1Lable",
                 "InheritedType": 10
               },
               {
@@ -1569,7 +1569,7 @@
               {
                 "nid": -202143892,
                 "strtype": "OBJECT/Name",
-                "strval": "Switch1",
+                "strval": "Light1Switch",
                 "InheritedType": 10
               },
               {
@@ -1861,7 +1861,7 @@
               {
                 "nid": -126357769,
                 "strtype": "OBJECT/Name",
-                "strval": "Slider2",
+                "strval": "Light2Slider",
                 "InheritedType": 10
               },
               {
@@ -2213,7 +2213,7 @@
               {
                 "nid": 1676668969,
                 "strtype": "OBJECT/Name",
-                "strval": "Label1",
+                "strval": "Light2Lable",
                 "InheritedType": 10
               },
               {
@@ -2499,7 +2499,7 @@
               {
                 "nid": -334180583,
                 "strtype": "OBJECT/Name",
-                "strval": "Switch2",
+                "strval": "Light2Switch",
                 "InheritedType": 10
               },
               {
@@ -2792,7 +2792,7 @@
               {
                 "nid": 778640022,
                 "strtype": "OBJECT/Name",
-                "strval": "Label2",
+                "strval": "Light3Lable",
                 "InheritedType": 10
               },
               {
@@ -3078,7 +3078,7 @@
               {
                 "nid": 80741643,
                 "strtype": "OBJECT/Name",
-                "strval": "Switch3",
+                "strval": "Light3Switch",
                 "InheritedType": 10
               },
               {
@@ -3370,7 +3370,7 @@
               {
                 "nid": -33270180,
                 "strtype": "OBJECT/Name",
-                "strval": "Slider3",
+                "strval": "Light3Slider",
                 "InheritedType": 10
               },
               {
@@ -4379,7 +4379,8 @@
                 "InheritedType": 4
               }
             ],
-            "saved_objtypeKey": "BUTTON"
+            "saved_objtypeKey": "BUTTON",
+            "tree_closed": true
           },
           {
             "guid": "GUID15931158-304068S3812245",
@@ -4970,7 +4971,8 @@
                 "InheritedType": 11
               }
             ],
-            "saved_objtypeKey": "BUTTON"
+            "saved_objtypeKey": "BUTTON",
+            "tree_closed": true
           }
         ],
         "isPage": true,
@@ -5244,7 +5246,7 @@
                   {
                     "nid": 1434662934,
                     "strtype": "OBJECT/Name",
-                    "strval": "Date1",
+                    "strval": "ThermoDate",
                     "InheritedType": 10
                   },
                   {
@@ -5550,7 +5552,7 @@
                   {
                     "nid": -1000535889,
                     "strtype": "OBJECT/Name",
-                    "strval": "Label7",
+                    "strval": "ThermoTime",
                     "InheritedType": 10
                   },
                   {
@@ -6737,7 +6739,8 @@
                 "InheritedType": 11
               }
             ],
-            "saved_objtypeKey": "BUTTON"
+            "saved_objtypeKey": "BUTTON",
+            "tree_closed": true
           },
           {
             "guid": "GUID27729477-318283S6502245",
@@ -7404,7 +7407,8 @@
                 "InheritedType": 4
               }
             ],
-            "saved_objtypeKey": "BUTTON"
+            "saved_objtypeKey": "BUTTON",
+            "tree_closed": true
           },
           {
             "guid": "GUID3608903-317356S3362245",
@@ -7700,7 +7704,7 @@
               {
                 "nid": 146224550,
                 "strtype": "OBJECT/Name",
-                "strval": "Arc1",
+                "strval": "ACArc",
                 "InheritedType": 10
               },
               {
@@ -8382,7 +8386,7 @@
               {
                 "nid": -334405194,
                 "strtype": "OBJECT/Name",
-                "strval": "Label13",
+                "strval": "TemperaturLable",
                 "InheritedType": 10
               },
               {
@@ -9025,7 +9029,7 @@
               {
                 "nid": 226150936,
                 "strtype": "OBJECT/Name",
-                "strval": "Button5",
+                "strval": "CelsiusButton",
                 "InheritedType": 10
               },
               {
@@ -9616,7 +9620,7 @@
               {
                 "nid": -1267531838,
                 "strtype": "OBJECT/Name",
-                "strval": "Button6",
+                "strval": "FahrenheitButton",
                 "InheritedType": 10
               },
               {
@@ -10185,7 +10189,7 @@
               {
                 "nid": -979608237,
                 "strtype": "OBJECT/Name",
-                "strval": "Label17",
+                "strval": "HumedityLable",
                 "InheritedType": 10
               },
               {
@@ -10520,7 +10524,7 @@
               {
                 "nid": -603381004,
                 "strtype": "OBJECT/Name",
-                "strval": "Label9",
+                "strval": "ACValueLable",
                 "InheritedType": 10
               },
               {
@@ -11134,7 +11138,7 @@
     "theme_color2": 0,
     "exportFolderPath": "D:\\workspace\\GUI_Contest_2023\\Smart_Home_Panel\\RT_Thread_GUI\\board\\lvgl\\demo",
     "projectExportFolderPath": "",
-    "backup_cnt": 15,
+    "backup_cnt": 22,
     "autosave_cnt": 0,
     "lvgl_version": "8.3.6",
     "callfuncsexport": "C_FILE",
