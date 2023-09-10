@@ -13,6 +13,7 @@
 
 #include <lvgl.h>
 #include <rtthread.h>
+#include "app.h"
 
 #define DBG_TAG    "LVGL"
 #define DBG_LVL    DBG_INFO
@@ -55,12 +56,14 @@ static void lvgl_thread_entry(void *parameter)
     lv_port_disp_init();
     lv_port_indev_init();
     lv_user_gui_init();
+    App_Init();
 
     /* handle the tasks of LVGL */
     while(1)
     {
         lv_task_handler();
         rt_thread_mdelay(LV_DISP_DEF_REFR_PERIOD);
+        App_MainFunction();
     }
 }
 
