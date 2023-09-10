@@ -43,6 +43,16 @@ void ui_event_Button4( lv_event_t * e);
 lv_obj_t *ui_Button4;
 lv_obj_t *ui_Label12;
 lv_obj_t *ui_Label8;
+lv_obj_t *ui_Arc1;
+lv_obj_t *ui_Label10;
+lv_obj_t *ui_Label13;
+lv_obj_t *ui_Button5;
+lv_obj_t *ui_Label14;
+lv_obj_t *ui_Button6;
+lv_obj_t *ui_Label15;
+lv_obj_t *ui_Label16;
+lv_obj_t *ui_Label17;
+lv_obj_t *ui_Label9;
 lv_obj_t *ui____initial_actions0;
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////

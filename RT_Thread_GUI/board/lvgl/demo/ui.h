@@ -46,6 +46,16 @@ void ui_event_Button4( lv_event_t * e);
 extern lv_obj_t *ui_Button4;
 extern lv_obj_t *ui_Label12;
 extern lv_obj_t *ui_Label8;
+extern lv_obj_t *ui_Arc1;
+extern lv_obj_t *ui_Label10;
+extern lv_obj_t *ui_Label13;
+extern lv_obj_t *ui_Button5;
+extern lv_obj_t *ui_Label14;
+extern lv_obj_t *ui_Button6;
+extern lv_obj_t *ui_Label15;
+extern lv_obj_t *ui_Label16;
+extern lv_obj_t *ui_Label17;
+extern lv_obj_t *ui_Label9;
 extern lv_obj_t *ui____initial_actions0;
 
 
