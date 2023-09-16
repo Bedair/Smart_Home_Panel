@@ -45,6 +45,7 @@ typedef enum IRQn
     DebugMonitor_IRQn     = -4,        /* 12 Debug Monitor */
     PendSV_IRQn           = -2,        /* 14 Pendable request for system service */
     SysTick_IRQn          = -1,        /* 15 System Tick Timer */
+    RTC_IRQn              = 0x4A,
 } IRQn_Type;
 
 #endif

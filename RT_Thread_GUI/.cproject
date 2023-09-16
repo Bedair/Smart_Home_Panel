@@ -134,6 +134,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc://${ProjName}//ra/fsp/inc/api}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc://${ProjName}//ra/fsp/inc/instances}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc://${ProjName}//ra/fsp/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc://${ProjName}//ra/fsp/src/bsp/mcu/all}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc://${ProjName}//ra/fsp/src/bsp/mcu/ra6m3}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc://${ProjName}//ra/fsp/src/bsp/cmsis/Device/RENESAS/Include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc://${ProjName}//ra/tes/dave2d/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc://${ProjName}//ra_cfg/fsp_cfg/bsp}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc://${ProjName}//ra_cfg/fsp_cfg}&quot;"/>
