@@ -19,6 +19,9 @@
 #include "base_addresses.h"
 #include "rthw.h"
 
+#define RTC_AM      (0)
+#define RTC_PM      (1)
+
 
 
 typedef enum {
@@ -30,6 +33,8 @@ typedef struct{
     uint8_t second;
     uint8_t minute;
     uint8_t hour;
+    uint8_t PM;
+
 
     uint8_t weekDay;
     uint8_t monthDay;

@@ -81,6 +81,7 @@ void RTC_Time_Set(RTC_Date_Time_Type * dateTime)
     R_RTC->RSECCNT = DEC_TO_BCD((uint8_t) dateTime->second);
     R_RTC->RMINCNT = DEC_TO_BCD((uint8_t) dateTime->minute);
     R_RTC->RHRCNT  = DEC_TO_BCD((uint8_t) dateTime->hour) & 0x3F;
+    R_RTC->RHRCNT_b.PM = dateTime->PM;
     R_RTC->RWKCNT  = DEC_TO_BCD((uint8_t) dateTime->weekDay);
     R_RTC->RDAYCNT = DEC_TO_BCD((uint8_t) dateTime->monthDay);
     R_RTC->RMONCNT = DEC_TO_BCD((uint8_t) (dateTime->month + 1));
@@ -110,6 +111,7 @@ void RTC_Time_Get(RTC_Date_Time_Type * dateTime)
         dateTime->second    = (int32_t) BCD_TO_DEX(R_RTC->RSECCNT);
         dateTime->minute    = (int32_t) BCD_TO_DEX(R_RTC->RMINCNT);
         dateTime->hour      = (int32_t) BCD_TO_DEX(R_RTC->RHRCNT & 0x3F);
+        dateTime->PM        = R_RTC->RHRCNT_b.PM;
         dateTime->weekDay   = (int32_t) BCD_TO_DEX(R_RTC->RWKCNT);
         dateTime->monthDay  = (int32_t) BCD_TO_DEX(R_RTC->RDAYCNT);
         dateTime->month     = (int32_t) BCD_TO_DEX(R_RTC->RMONCNT) - 1;
