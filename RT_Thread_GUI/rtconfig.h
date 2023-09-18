@@ -297,6 +297,8 @@
 #define BSP_I2C1_SDA_PIN 0x0203
 #define BSP_USING_PWM
 #define BSP_USING_PWM5
+#define BSP_USING_PWM7
+#define BSP_USING_PWM8
 #define BSP_USING_LCD
 #define BSP_USING_LVGL
 #define BSP_USING_LCD_RGB

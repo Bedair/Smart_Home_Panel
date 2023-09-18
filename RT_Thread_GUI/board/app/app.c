@@ -16,6 +16,7 @@
 #include "app.h"
 #include "RTC_Drv.h"
 #include "ui.h"
+#include "hal_data.h"
 
 
 
@@ -75,6 +76,12 @@ void App_Init(void)
 {
     RTC_Init(RTC_MODE_CALENDAR);
     RTC_Time_Set(&Default_Time_Date);
+
+    R_GPT_Open(&g_timer7_ctrl, &g_timer7_cfg);
+    R_GPT_Start(&g_timer7_ctrl);
+
+    R_GPT_Open(&g_timer8_ctrl, &g_timer8_cfg);
+    R_GPT_Start(&g_timer8_ctrl);
 }
 
 
