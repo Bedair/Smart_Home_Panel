@@ -82,6 +82,9 @@ void App_Init(void)
 
     R_GPT_Open(&g_timer8_ctrl, &g_timer8_cfg);
     R_GPT_Start(&g_timer8_ctrl);
+
+    R_GPT_Open(&g_timer4_ctrl, &g_timer4_cfg);
+    R_GPT_Start(&g_timer4_ctrl);
 }
 
 
