@@ -10,6 +10,13 @@
 extern "C" {
 #endif
 
+void Light_1_Slider_Changed(lv_event_t * e);
+void Light_1_Button_Clicked(lv_event_t * e);
+void Light_2_Slider_Changed(lv_event_t * e);
+void Light_2_Button_Clicked(lv_event_t * e);
+void Light_3_Button_Clicked(lv_event_t * e);
+void Light_3_Slider_Changed(lv_event_t * e);
+
 #ifdef __cplusplus
 } /*extern "C"*/
 #endif

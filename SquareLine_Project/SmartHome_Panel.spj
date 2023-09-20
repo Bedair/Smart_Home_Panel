@@ -1270,6 +1270,71 @@
                 "strtype": "SLIDER/Style_knob",
                 "strval": "lv.PART.KNOB, Rectangle, Pad",
                 "InheritedType": 11
+              },
+              {
+                "disabled": false,
+                "nid": -26767749,
+                "strtype": "SLIDER/EventHandler",
+                "strval": "RELEASED",
+                "childs": [
+                  {
+                    "nid": -1306277414,
+                    "strtype": "_custom/name",
+                    "strval": "Slider1",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -305482339,
+                    "strtype": "_custom/condition_C",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": 1358219144,
+                    "strtype": "_custom/condition_P",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -910931840,
+                    "strtype": "_custom/action",
+                    "strval": "CALL FUNCTION",
+                    "childs": [
+                      {
+                        "nid": 2120692728,
+                        "strtype": "CALL FUNCTION/Name",
+                        "strval": "CALL FUNCTION",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -1790261376,
+                        "strtype": "CALL FUNCTION/Call",
+                        "strval": "<{Function_name}>( event_struct )",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 1479004628,
+                        "strtype": "CALL FUNCTION/CallC",
+                        "strval": "<{Function_name}>( e );",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -425172913,
+                        "strtype": "CALL FUNCTION/Function_name",
+                        "strval": "Light_1_Slider_Changed",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 1869041599,
+                        "strtype": "CALL FUNCTION/Dont_export_function",
+                        "strval": "True",
+                        "InheritedType": 2
+                      }
+                    ],
+                    "InheritedType": 10
+                  }
+                ],
+                "InheritedType": 4
               }
             ],
             "saved_objtypeKey": "SLIDER",
@@ -1713,6 +1778,7 @@
               },
               {
                 "nid": 1071055898,
+                "flags": 1048576,
                 "strtype": "OBJECT/States",
                 "InheritedType": 1
               },
@@ -1766,6 +1832,7 @@
               },
               {
                 "nid": -909304600,
+                "flags": 1048576,
                 "strtype": "SWITCH/Switch",
                 "InheritedType": 1
               },
@@ -1849,6 +1916,71 @@
                 "strtype": "SWITCH/Style_knob",
                 "strval": "lv.PART.KNOB, Rectangle, Pad",
                 "InheritedType": 11
+              },
+              {
+                "disabled": false,
+                "nid": -1085931362,
+                "strtype": "SWITCH/EventHandler",
+                "strval": "VALUE_CHANGED",
+                "childs": [
+                  {
+                    "nid": -1154010063,
+                    "strtype": "_custom/name",
+                    "strval": "Light1Button",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -1875576910,
+                    "strtype": "_custom/condition_C",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -1786708932,
+                    "strtype": "_custom/condition_P",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -1957212806,
+                    "strtype": "_custom/action",
+                    "strval": "CALL FUNCTION",
+                    "childs": [
+                      {
+                        "nid": 1941532836,
+                        "strtype": "CALL FUNCTION/Name",
+                        "strval": "CALL FUNCTION",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -148363316,
+                        "strtype": "CALL FUNCTION/Call",
+                        "strval": "<{Function_name}>( event_struct )",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 862748830,
+                        "strtype": "CALL FUNCTION/CallC",
+                        "strval": "<{Function_name}>( e );",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -1486391857,
+                        "strtype": "CALL FUNCTION/Function_name",
+                        "strval": "Light_1_Button_Clicked",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -1944450750,
+                        "strtype": "CALL FUNCTION/Dont_export_function",
+                        "strval": "True",
+                        "InheritedType": 2
+                      }
+                    ],
+                    "InheritedType": 10
+                  }
+                ],
+                "InheritedType": 4
               }
             ],
             "saved_objtypeKey": "SWITCH"
@@ -2200,6 +2332,71 @@
                 "strtype": "SLIDER/Style_knob",
                 "strval": "lv.PART.KNOB, Rectangle, Pad",
                 "InheritedType": 11
+              },
+              {
+                "disabled": false,
+                "nid": 1003442222,
+                "strtype": "SLIDER/EventHandler",
+                "strval": "RELEASED",
+                "childs": [
+                  {
+                    "nid": 565309364,
+                    "strtype": "_custom/name",
+                    "strval": "Slider2",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": 1666389495,
+                    "strtype": "_custom/condition_C",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": 1296123364,
+                    "strtype": "_custom/condition_P",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -769983756,
+                    "strtype": "_custom/action",
+                    "strval": "CALL FUNCTION",
+                    "childs": [
+                      {
+                        "nid": -1225202084,
+                        "strtype": "CALL FUNCTION/Name",
+                        "strval": "CALL FUNCTION",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 917953898,
+                        "strtype": "CALL FUNCTION/Call",
+                        "strval": "<{Function_name}>( event_struct )",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -1606100949,
+                        "strtype": "CALL FUNCTION/CallC",
+                        "strval": "<{Function_name}>( e );",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -1144355653,
+                        "strtype": "CALL FUNCTION/Function_name",
+                        "strval": "Light_2_Slider_Changed",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 1900108227,
+                        "strtype": "CALL FUNCTION/Dont_export_function",
+                        "strval": "True",
+                        "InheritedType": 2
+                      }
+                    ],
+                    "InheritedType": 10
+                  }
+                ],
+                "InheritedType": 4
               }
             ],
             "saved_objtypeKey": "SLIDER",
@@ -2780,6 +2977,71 @@
                 "strtype": "SWITCH/Style_knob",
                 "strval": "lv.PART.KNOB, Rectangle, Pad",
                 "InheritedType": 11
+              },
+              {
+                "disabled": false,
+                "nid": -1126496942,
+                "strtype": "SWITCH/EventHandler",
+                "strval": "VALUE_CHANGED",
+                "childs": [
+                  {
+                    "nid": 1118124011,
+                    "strtype": "_custom/name",
+                    "strval": "Light2Button",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": 1872890164,
+                    "strtype": "_custom/condition_C",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": 1819793419,
+                    "strtype": "_custom/condition_P",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": 243487145,
+                    "strtype": "_custom/action",
+                    "strval": "CALL FUNCTION",
+                    "childs": [
+                      {
+                        "nid": 217412784,
+                        "strtype": "CALL FUNCTION/Name",
+                        "strval": "CALL FUNCTION",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 1109683895,
+                        "strtype": "CALL FUNCTION/Call",
+                        "strval": "<{Function_name}>( event_struct )",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -1105214293,
+                        "strtype": "CALL FUNCTION/CallC",
+                        "strval": "<{Function_name}>( e );",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -695735104,
+                        "strtype": "CALL FUNCTION/Function_name",
+                        "strval": "Light_2_Button_Clicked",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -165602252,
+                        "strtype": "CALL FUNCTION/Dont_export_function",
+                        "strval": "True",
+                        "InheritedType": 2
+                      }
+                    ],
+                    "InheritedType": 10
+                  }
+                ],
+                "InheritedType": 4
               }
             ],
             "saved_objtypeKey": "SWITCH"
@@ -3358,6 +3620,71 @@
                 "strtype": "SWITCH/Style_knob",
                 "strval": "lv.PART.KNOB, Rectangle, Pad",
                 "InheritedType": 11
+              },
+              {
+                "disabled": false,
+                "nid": 1190160851,
+                "strtype": "SWITCH/EventHandler",
+                "strval": "VALUE_CHANGED",
+                "childs": [
+                  {
+                    "nid": -385839309,
+                    "strtype": "_custom/name",
+                    "strval": "Light3Button",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": 1508141088,
+                    "strtype": "_custom/condition_C",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": 1395889491,
+                    "strtype": "_custom/condition_P",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -1536088150,
+                    "strtype": "_custom/action",
+                    "strval": "CALL FUNCTION",
+                    "childs": [
+                      {
+                        "nid": 785177983,
+                        "strtype": "CALL FUNCTION/Name",
+                        "strval": "CALL FUNCTION",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 1289664034,
+                        "strtype": "CALL FUNCTION/Call",
+                        "strval": "<{Function_name}>( event_struct )",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 2031317224,
+                        "strtype": "CALL FUNCTION/CallC",
+                        "strval": "<{Function_name}>( e );",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 2014417259,
+                        "strtype": "CALL FUNCTION/Function_name",
+                        "strval": "Light_3_Button_Clicked",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -1558534028,
+                        "strtype": "CALL FUNCTION/Dont_export_function",
+                        "strval": "True",
+                        "InheritedType": 2
+                      }
+                    ],
+                    "InheritedType": 10
+                  }
+                ],
+                "InheritedType": 4
               }
             ],
             "saved_objtypeKey": "SWITCH"
@@ -3709,6 +4036,71 @@
                 "strtype": "SLIDER/Style_knob",
                 "strval": "lv.PART.KNOB, Rectangle, Pad",
                 "InheritedType": 11
+              },
+              {
+                "disabled": false,
+                "nid": 1594926409,
+                "strtype": "SLIDER/EventHandler",
+                "strval": "RELEASED",
+                "childs": [
+                  {
+                    "nid": -167358880,
+                    "strtype": "_custom/name",
+                    "strval": "Slider3",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": 1652476352,
+                    "strtype": "_custom/condition_C",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -1093730795,
+                    "strtype": "_custom/condition_P",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": 1738808399,
+                    "strtype": "_custom/action",
+                    "strval": "CALL FUNCTION",
+                    "childs": [
+                      {
+                        "nid": -358732016,
+                        "strtype": "CALL FUNCTION/Name",
+                        "strval": "CALL FUNCTION",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -1118973717,
+                        "strtype": "CALL FUNCTION/Call",
+                        "strval": "<{Function_name}>( event_struct )",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 1210510682,
+                        "strtype": "CALL FUNCTION/CallC",
+                        "strval": "<{Function_name}>( e );",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 558002792,
+                        "strtype": "CALL FUNCTION/Function_name",
+                        "strval": "Light_3_Slider_Changed",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -244467356,
+                        "strtype": "CALL FUNCTION/Dont_export_function",
+                        "strval": "True",
+                        "InheritedType": 2
+                      }
+                    ],
+                    "InheritedType": 10
+                  }
+                ],
+                "InheritedType": 4
               }
             ],
             "saved_objtypeKey": "SLIDER",
@@ -11138,7 +11530,7 @@
     "theme_color2": 0,
     "exportFolderPath": "D:\\workspace\\GUI_Contest_2023\\Smart_Home_Panel\\RT_Thread_GUI\\board\\lvgl\\demo",
     "projectExportFolderPath": "",
-    "backup_cnt": 22,
+    "backup_cnt": 29,
     "autosave_cnt": 0,
     "lvgl_version": "8.3.6",
     "callfuncsexport": "C_FILE",

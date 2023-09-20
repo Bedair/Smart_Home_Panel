@@ -216,6 +216,12 @@ lv_label_set_text(ui_Label4,"Light");
 lv_obj_set_style_text_color(ui_Label4, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT );
 lv_obj_set_style_text_opa(ui_Label4, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
 
+lv_obj_add_event_cb(ui_Light1Slider, ui_event_Light1Slider, LV_EVENT_ALL, NULL);
+lv_obj_add_event_cb(ui_Light1Switch, ui_event_Light1Switch, LV_EVENT_ALL, NULL);
+lv_obj_add_event_cb(ui_Light2Slider, ui_event_Light2Slider, LV_EVENT_ALL, NULL);
+lv_obj_add_event_cb(ui_Light2Switch, ui_event_Light2Switch, LV_EVENT_ALL, NULL);
+lv_obj_add_event_cb(ui_Light3Switch, ui_event_Light3Switch, LV_EVENT_ALL, NULL);
+lv_obj_add_event_cb(ui_Light3Slider, ui_event_Light3Slider, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_Button1, ui_event_Button1, LV_EVENT_ALL, NULL);
 
 }

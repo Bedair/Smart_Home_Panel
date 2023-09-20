@@ -15,14 +15,20 @@ lv_obj_t *ui_LightScreen;
 lv_obj_t *ui_Header;
 lv_obj_t *ui_LightDate;
 lv_obj_t *ui_LightTime;
+void ui_event_Light1Slider( lv_event_t * e);
 lv_obj_t *ui_Light1Slider;
 lv_obj_t *ui_Light1Lable;
+void ui_event_Light1Switch( lv_event_t * e);
 lv_obj_t *ui_Light1Switch;
+void ui_event_Light2Slider( lv_event_t * e);
 lv_obj_t *ui_Light2Slider;
 lv_obj_t *ui_Light2Lable;
+void ui_event_Light2Switch( lv_event_t * e);
 lv_obj_t *ui_Light2Switch;
 lv_obj_t *ui_Light3Lable;
+void ui_event_Light3Switch( lv_event_t * e);
 lv_obj_t *ui_Light3Switch;
+void ui_event_Light3Slider( lv_event_t * e);
 lv_obj_t *ui_Light3Slider;
 void ui_event_Button1( lv_event_t * e);
 lv_obj_t *ui_Button1;
@@ -66,6 +72,42 @@ lv_obj_t *ui____initial_actions0;
 ///////////////////// ANIMATIONS ////////////////////
 
 ///////////////////// FUNCTIONS ////////////////////
+void ui_event_Light1Slider( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_VALUE_CHANGED) {
+      Light_1_Slider_Changed( e );
+}
+}
+void ui_event_Light1Switch( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_VALUE_CHANGED) {
+      Light_1_Button_Clicked( e );
+}
+}
+void ui_event_Light2Slider( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_VALUE_CHANGED) {
+      Light_2_Slider_Changed( e );
+}
+}
+void ui_event_Light2Switch( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_VALUE_CHANGED) {
+      Light_2_Button_Clicked( e );
+}
+}
+void ui_event_Light3Switch( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_VALUE_CHANGED) {
+      Light_3_Button_Clicked( e );
+}
+}
+void ui_event_Light3Slider( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_VALUE_CHANGED) {
+      Light_3_Slider_Changed( e );
+}
+}
 void ui_event_Button1( lv_event_t * e) {
     lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
 if ( event_code == LV_EVENT_CLICKED) {
