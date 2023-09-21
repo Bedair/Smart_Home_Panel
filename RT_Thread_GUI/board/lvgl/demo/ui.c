@@ -49,11 +49,14 @@ void ui_event_Button4( lv_event_t * e);
 lv_obj_t *ui_Button4;
 lv_obj_t *ui_Label12;
 lv_obj_t *ui_Label8;
+void ui_event_ACArc( lv_event_t * e);
 lv_obj_t *ui_ACArc;
 lv_obj_t *ui_Label10;
 lv_obj_t *ui_TemperaturLable;
+void ui_event_CelsiusButton( lv_event_t * e);
 lv_obj_t *ui_CelsiusButton;
 lv_obj_t *ui_Label14;
+void ui_event_FahrenheitButton( lv_event_t * e);
 lv_obj_t *ui_FahrenheitButton;
 lv_obj_t *ui_Label15;
 lv_obj_t *ui_Label16;
@@ -74,7 +77,7 @@ lv_obj_t *ui____initial_actions0;
 ///////////////////// FUNCTIONS ////////////////////
 void ui_event_Light1Slider( lv_event_t * e) {
     lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
-if ( event_code == LV_EVENT_VALUE_CHANGED) {
+if ( event_code == LV_EVENT_RELEASED) {
       Light_1_Slider_Changed( e );
 }
 }
@@ -86,7 +89,7 @@ if ( event_code == LV_EVENT_VALUE_CHANGED) {
 }
 void ui_event_Light2Slider( lv_event_t * e) {
     lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
-if ( event_code == LV_EVENT_VALUE_CHANGED) {
+if ( event_code == LV_EVENT_RELEASED) {
       Light_2_Slider_Changed( e );
 }
 }
@@ -104,7 +107,7 @@ if ( event_code == LV_EVENT_VALUE_CHANGED) {
 }
 void ui_event_Light3Slider( lv_event_t * e) {
     lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
-if ( event_code == LV_EVENT_VALUE_CHANGED) {
+if ( event_code == LV_EVENT_RELEASED) {
       Light_3_Slider_Changed( e );
 }
 }
@@ -118,6 +121,24 @@ void ui_event_Button4( lv_event_t * e) {
     lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
 if ( event_code == LV_EVENT_CLICKED) {
       _ui_screen_change( &ui_LightScreen, LV_SCR_LOAD_ANIM_MOVE_RIGHT, 500, 0, &ui_LightScreen_screen_init);
+}
+}
+void ui_event_ACArc( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_VALUE_CHANGED) {
+      UpdateAC( e );
+}
+}
+void ui_event_CelsiusButton( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_CLICKED) {
+      ToCelsius( e );
+}
+}
+void ui_event_FahrenheitButton( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);lv_obj_t * target = lv_event_get_target(e);
+if ( event_code == LV_EVENT_CLICKED) {
+      ToFahrenheit( e );
 }
 }
 

@@ -18,6 +18,7 @@
 #include "ui.h"
 #include "hal_data.h"
 #include "App_Light.h"
+#include "App_Thermostat.h"
 
 
 
@@ -87,6 +88,7 @@ void App_MainFunction(void)
 { 
     App_GUI_Update_Date_Time();
     App_Light_MainFunction();
+    App_Thermostat_MainFunction();
 }
 
 void App_GUI_Update_Date_Time(void)

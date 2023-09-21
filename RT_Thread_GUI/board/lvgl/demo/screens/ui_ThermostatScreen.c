@@ -94,6 +94,8 @@ lv_obj_set_height( ui_ACArc, 150);
 lv_obj_set_x( ui_ACArc, 106 );
 lv_obj_set_y( ui_ACArc, 70 );
 lv_obj_set_align( ui_ACArc, LV_ALIGN_CENTER );
+lv_arc_set_range(ui_ACArc, 15,30);
+lv_arc_set_value(ui_ACArc, 20);
 lv_obj_set_style_arc_color(ui_ACArc, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT );
 lv_obj_set_style_arc_opa(ui_ACArc, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
 lv_obj_set_style_arc_width(ui_ACArc, 10, LV_PART_MAIN| LV_STATE_DEFAULT);
@@ -206,5 +208,8 @@ lv_obj_set_style_border_opa(ui_ACValueLable, 255, LV_PART_MAIN| LV_STATE_DEFAULT
 lv_obj_set_style_border_width(ui_ACValueLable, 1, LV_PART_MAIN| LV_STATE_DEFAULT);
 
 lv_obj_add_event_cb(ui_Button4, ui_event_Button4, LV_EVENT_ALL, NULL);
+lv_obj_add_event_cb(ui_ACArc, ui_event_ACArc, LV_EVENT_ALL, NULL);
+lv_obj_add_event_cb(ui_CelsiusButton, ui_event_CelsiusButton, LV_EVENT_ALL, NULL);
+lv_obj_add_event_cb(ui_FahrenheitButton, ui_event_FahrenheitButton, LV_EVENT_ALL, NULL);
 
 }

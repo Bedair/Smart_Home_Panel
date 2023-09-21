@@ -1274,7 +1274,7 @@
               {
                 "disabled": false,
                 "nid": -26767749,
-                "strtype": "SLIDER/EventHandler",
+                "strtype": "_event/EventHandler",
                 "strval": "RELEASED",
                 "childs": [
                   {
@@ -1297,7 +1297,7 @@
                   },
                   {
                     "nid": -910931840,
-                    "strtype": "_custom/action",
+                    "strtype": "_event/action",
                     "strval": "CALL FUNCTION",
                     "childs": [
                       {
@@ -1920,7 +1920,7 @@
               {
                 "disabled": false,
                 "nid": -1085931362,
-                "strtype": "SWITCH/EventHandler",
+                "strtype": "_event/EventHandler",
                 "strval": "VALUE_CHANGED",
                 "childs": [
                   {
@@ -1943,7 +1943,7 @@
                   },
                   {
                     "nid": -1957212806,
-                    "strtype": "_custom/action",
+                    "strtype": "_event/action",
                     "strval": "CALL FUNCTION",
                     "childs": [
                       {
@@ -2336,7 +2336,7 @@
               {
                 "disabled": false,
                 "nid": 1003442222,
-                "strtype": "SLIDER/EventHandler",
+                "strtype": "_event/EventHandler",
                 "strval": "RELEASED",
                 "childs": [
                   {
@@ -2359,7 +2359,7 @@
                   },
                   {
                     "nid": -769983756,
-                    "strtype": "_custom/action",
+                    "strtype": "_event/action",
                     "strval": "CALL FUNCTION",
                     "childs": [
                       {
@@ -2981,7 +2981,7 @@
               {
                 "disabled": false,
                 "nid": -1126496942,
-                "strtype": "SWITCH/EventHandler",
+                "strtype": "_event/EventHandler",
                 "strval": "VALUE_CHANGED",
                 "childs": [
                   {
@@ -3004,7 +3004,7 @@
                   },
                   {
                     "nid": 243487145,
-                    "strtype": "_custom/action",
+                    "strtype": "_event/action",
                     "strval": "CALL FUNCTION",
                     "childs": [
                       {
@@ -3624,7 +3624,7 @@
               {
                 "disabled": false,
                 "nid": 1190160851,
-                "strtype": "SWITCH/EventHandler",
+                "strtype": "_event/EventHandler",
                 "strval": "VALUE_CHANGED",
                 "childs": [
                   {
@@ -3647,7 +3647,7 @@
                   },
                   {
                     "nid": -1536088150,
-                    "strtype": "_custom/action",
+                    "strtype": "_event/action",
                     "strval": "CALL FUNCTION",
                     "childs": [
                       {
@@ -4040,7 +4040,7 @@
               {
                 "disabled": false,
                 "nid": 1594926409,
-                "strtype": "SLIDER/EventHandler",
+                "strtype": "_event/EventHandler",
                 "strval": "RELEASED",
                 "childs": [
                   {
@@ -4063,7 +4063,7 @@
                   },
                   {
                     "nid": 1738808399,
-                    "strtype": "_custom/action",
+                    "strtype": "_event/action",
                     "strval": "CALL FUNCTION",
                     "childs": [
                       {
@@ -8349,14 +8349,15 @@
                 "nid": 2145127337,
                 "strtype": "ARC/Range",
                 "intarray": [
-                  0,
-                  100
+                  15,
+                  30
                 ],
                 "InheritedType": 7
               },
               {
                 "nid": 91371494,
                 "strtype": "ARC/Value",
+                "integer": 20,
                 "InheritedType": 6
               },
               {
@@ -8480,6 +8481,71 @@
                 "strtype": "ARC/Style_knob",
                 "strval": "lv.PART.KNOB, Rectangle, Pad",
                 "InheritedType": 11
+              },
+              {
+                "disabled": false,
+                "nid": 1474683216,
+                "strtype": "ARC/EventHandler",
+                "strval": "VALUE_CHANGED",
+                "childs": [
+                  {
+                    "nid": 1032625992,
+                    "strtype": "_custom/name",
+                    "strval": "Event5",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -677189794,
+                    "strtype": "_custom/condition_C",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -771088468,
+                    "strtype": "_custom/condition_P",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -1598348548,
+                    "strtype": "_custom/action",
+                    "strval": "CALL FUNCTION",
+                    "childs": [
+                      {
+                        "nid": -32654725,
+                        "strtype": "CALL FUNCTION/Name",
+                        "strval": "CALL FUNCTION",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -1370687907,
+                        "strtype": "CALL FUNCTION/Call",
+                        "strval": "<{Function_name}>( event_struct )",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -913210628,
+                        "strtype": "CALL FUNCTION/CallC",
+                        "strval": "<{Function_name}>( e );",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 1694685167,
+                        "strtype": "CALL FUNCTION/Function_name",
+                        "strval": "UpdateAC",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -667867443,
+                        "strtype": "CALL FUNCTION/Dont_export_function",
+                        "strval": "True",
+                        "InheritedType": 2
+                      }
+                    ],
+                    "InheritedType": 10
+                  }
+                ],
+                "InheritedType": 4
               }
             ],
             "saved_objtypeKey": "ARC"
@@ -9692,6 +9758,71 @@
                 "strtype": "BUTTON/Style_main",
                 "strval": "lv.PART.MAIN, Rectangle, Pad, Text ",
                 "InheritedType": 11
+              },
+              {
+                "disabled": false,
+                "nid": -1454401536,
+                "strtype": "BUTTON/EventHandler",
+                "strval": "CLICKED",
+                "childs": [
+                  {
+                    "nid": -343070821,
+                    "strtype": "_custom/name",
+                    "strval": "Event3",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": 612584783,
+                    "strtype": "_custom/condition_C",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": 927417375,
+                    "strtype": "_custom/condition_P",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": 1789745893,
+                    "strtype": "_custom/action",
+                    "strval": "CALL FUNCTION",
+                    "childs": [
+                      {
+                        "nid": 530406196,
+                        "strtype": "CALL FUNCTION/Name",
+                        "strval": "CALL FUNCTION",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 1707754189,
+                        "strtype": "CALL FUNCTION/Call",
+                        "strval": "<{Function_name}>( event_struct )",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -145797100,
+                        "strtype": "CALL FUNCTION/CallC",
+                        "strval": "<{Function_name}>( e );",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -1849603468,
+                        "strtype": "CALL FUNCTION/Function_name",
+                        "strval": "ToCelsius",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 328737933,
+                        "strtype": "CALL FUNCTION/Dont_export_function",
+                        "strval": "True",
+                        "InheritedType": 2
+                      }
+                    ],
+                    "InheritedType": 10
+                  }
+                ],
+                "InheritedType": 4
               }
             ],
             "saved_objtypeKey": "BUTTON"
@@ -10283,6 +10414,71 @@
                 "strtype": "BUTTON/Style_main",
                 "strval": "lv.PART.MAIN, Rectangle, Pad, Text ",
                 "InheritedType": 11
+              },
+              {
+                "disabled": false,
+                "nid": 349697444,
+                "strtype": "BUTTON/EventHandler",
+                "strval": "CLICKED",
+                "childs": [
+                  {
+                    "nid": 1265624103,
+                    "strtype": "_custom/name",
+                    "strval": "Event4",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -986654717,
+                    "strtype": "_custom/condition_C",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -511574799,
+                    "strtype": "_custom/condition_P",
+                    "strval": "",
+                    "InheritedType": 10
+                  },
+                  {
+                    "nid": -857997298,
+                    "strtype": "_custom/action",
+                    "strval": "CALL FUNCTION",
+                    "childs": [
+                      {
+                        "nid": -823480356,
+                        "strtype": "CALL FUNCTION/Name",
+                        "strval": "CALL FUNCTION",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 1963663769,
+                        "strtype": "CALL FUNCTION/Call",
+                        "strval": "<{Function_name}>( event_struct )",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 696380203,
+                        "strtype": "CALL FUNCTION/CallC",
+                        "strval": "<{Function_name}>( e );",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": -1015686828,
+                        "strtype": "CALL FUNCTION/Function_name",
+                        "strval": "ToFahrenheit",
+                        "InheritedType": 10
+                      },
+                      {
+                        "nid": 1540740878,
+                        "strtype": "CALL FUNCTION/Dont_export_function",
+                        "strval": "True",
+                        "InheritedType": 2
+                      }
+                    ],
+                    "InheritedType": 10
+                  }
+                ],
+                "InheritedType": 4
               }
             ],
             "saved_objtypeKey": "BUTTON"
@@ -11530,7 +11726,7 @@
     "theme_color2": 0,
     "exportFolderPath": "D:\\workspace\\GUI_Contest_2023\\Smart_Home_Panel\\RT_Thread_GUI\\board\\lvgl\\demo",
     "projectExportFolderPath": "",
-    "backup_cnt": 29,
+    "backup_cnt": 37,
     "autosave_cnt": 0,
     "lvgl_version": "8.3.6",
     "callfuncsexport": "C_FILE",
