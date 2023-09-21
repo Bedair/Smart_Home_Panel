@@ -1,9 +1,6 @@
 # Overview
 A smart Home control Panel based on RT-Threas HMI Board. The System gives the abiity to control Light state and Brightness. It also display the Temperature (in Celsius and Fahrenheit) and Humidity data. This Repo include both SquareLine Project to modify the GUI, and RT-Thread Project which contain the Code for the HMI Board.
 
-![Light Screen]([http://url/to/img.png](https://imageupload.io/tW1NlIjJjxRWduz))
-![Thermostat Screen]([http://url/to/img.png](https://imageupload.io/mjt0L1uO0Q0NKD7))
-
 
 # Requirements
 - RT-Thread HMI Board
